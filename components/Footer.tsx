@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import SocialButton from './SocialButton';
 import githubLogo from '../public/github-mark.svg';
-import linkedinLogo from '../public/LI-In-bug.png';
+import linkedinLogo from '../public/linkedin.png';
 import Image from 'next/image';
 
 const Footer = () => (

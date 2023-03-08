@@ -11,7 +11,7 @@ const nextConfig = {
             value: `
             default-src 'self';
             object-src 'self';
-            script-src 'self' 'unsafe-eval';
+            script-src 'self' 'unsafe-eval' 'https://netlify-cdp-loader.netlify.app/netlify.js';
             style-src 'self' 'unsafe-inline';
             font-src 'self';  
           `
