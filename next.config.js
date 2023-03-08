@@ -12,6 +12,7 @@ const nextConfig = {
             default-src 'self';
             object-src 'self';
             script-src 'self' 'unsafe-eval' https://netlify-cdp-loader.netlify.app/;
+            frame-src https://app.netlify.com/;
             style-src 'self' 'unsafe-inline';
             font-src 'self';  
           `
