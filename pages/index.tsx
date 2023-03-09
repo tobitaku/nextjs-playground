@@ -27,7 +27,7 @@ const Home = () => (
           src={profilePic}
           alt="Profile picture"
           className="max-w-full shrink rounded-full"
-          placeholder="blur"
+          placeholder="empty"
           priority
         />
       </div>
