@@ -30,7 +30,15 @@ export default function Home() {
         }}
         og
       />
-      <section className="mb-8 flex w-full flex-col items-center justify-center md:flex-row">
+      <motion.section
+        variants={
+          prefersReducedMotion ? slideInVariantsReducedMotion : slideInVariants
+        }
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        className="mb-8 flex w-full flex-col items-center justify-center md:flex-row"
+      >
         <div className="m-8 max-w-sm">
           <Image
             src={profilePic}
@@ -62,7 +70,7 @@ export default function Home() {
           </motion.h1>
           <ContactButton />
         </div>
-      </section>
+      </motion.section>
       <section className="mb-8 flex w-full flex-col items-center justify-center">
         <Card dark>
           <motion.h2
