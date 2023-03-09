@@ -2,7 +2,7 @@ import { Variants } from 'framer-motion';
 
 export const slideInVariants: Variants = {
   offscreen: {
-    opacity: 0,
+    opacity: 0.5,
     y: 200,
   },
   onscreen: {
@@ -19,7 +19,7 @@ export const slideInVariants: Variants = {
 
 export const slideInVariantsReducedMotion: Variants = {
   offscreen: {
-    opacity: 0,
+    opacity: 1,
     y: 0,
   },
   onscreen: {
@@ -30,7 +30,7 @@ export const slideInVariantsReducedMotion: Variants = {
 
 export const slideInItemVariants: Variants = {
   offscreen: {
-    opacity: 0,
+    opacity: 0.5,
     x: 50,
   },
   onscreen: {
@@ -46,7 +46,7 @@ export const slideInItemVariants: Variants = {
 
 export const slideInItemVariantsReducedMotion: Variants = {
   offscreen: {
-    opacity: 0,
+    opacity: 1,
     x: 0,
   },
   onscreen: {
