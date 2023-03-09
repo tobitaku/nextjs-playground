@@ -2,7 +2,7 @@ import Card from '@/components/Card';
 import ContactButton from '@/components/ContactButton';
 import GradientText from '@/components/GradientText';
 import Image from 'next/image';
-import profilePic from '../public/profile.png';
+import profilePic from '../public/profile.webp';
 import Head from '@/components/Head';
 
 const Home = () => (
@@ -27,6 +27,7 @@ const Home = () => (
           src={profilePic}
           alt="Profile picture"
           className="max-w-full shrink rounded-full"
+          placeholder="blur"
           priority
         />
       </div>
