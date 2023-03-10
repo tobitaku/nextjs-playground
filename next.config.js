@@ -18,7 +18,8 @@ const nextConfig = {
             script-src 'self' 'unsafe-eval' https://netlify-cdp-loader.netlify.app/;
             frame-src https://app.netlify.com/;
             style-src 'self' 'unsafe-inline';
-            font-src 'self';  
+            font-src 'self';
+            base-uri 'none';
           `
               .replace(/\s{2,}/g, ' ')
               .trim(),
