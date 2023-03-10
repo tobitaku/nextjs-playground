@@ -46,7 +46,7 @@ const Home = () => (
         <h2 className="text-4xl font-bold tracking-tighter">
           <GradientText gradient="amber">Portfolio</GradientText>
         </h2>
-        <h6 className="text-md mb-4 font-light">Mär. 2023</h6>
+        <p className="text-md mb-4 font-light">Mär. 2023</p>
         <p className="mb-4 text-lg font-semibold">
           Erstellung meiner persönlichen Website mit den Technologien:
         </p>
@@ -60,7 +60,7 @@ const Home = () => (
         <h2 className="text-4xl font-bold tracking-tighter">
           <GradientText gradient="amber">Full Stack Entwicklung</GradientText>
         </h2>
-        <h6 className="text-md mb-4 font-light">2017 - heute</h6>
+        <p className="text-md mb-4 font-light">2017 - heute</p>
         <p className="mb-4 text-lg font-semibold">
           In meinem Beruf sammle ich täglich Erfahrung mit den Technologien:
         </p>
