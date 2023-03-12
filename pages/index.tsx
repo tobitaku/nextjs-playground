@@ -8,10 +8,10 @@ import {
   slideInVariants,
   slideInVariantsReducedMotion,
 } from '@/shared/animations';
-import profilePic from '../public/profile.png';
+import profilePic from '../public/profile.webp';
 import Head from '@/components/Head';
 
-export default function Home() {
+const Home = () => {
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -83,7 +83,7 @@ export default function Home() {
           >
             <GradientText gradient="amber">Portfolio</GradientText>
           </motion.h2>
-          <motion.h6
+          <motion.p
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -92,7 +92,7 @@ export default function Home() {
             className="text-md mb-4 font-light"
           >
             Mär. 2023
-          </motion.h6>
+          </motion.p>
           <motion.p
             variants={
               prefersReducedMotion
@@ -127,7 +127,7 @@ export default function Home() {
           >
             <GradientText gradient="amber">Full Stack Entwicklung</GradientText>
           </motion.h2>
-          <motion.h6
+          <motion.p
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -136,7 +136,7 @@ export default function Home() {
             className="text-md mb-4 font-light"
           >
             2017 - heute
-          </motion.h6>
+          </motion.p>
           <motion.p
             variants={
               prefersReducedMotion
@@ -189,4 +189,6 @@ export default function Home() {
       </section>
     </>
   );
-}
+};
+
+export default Home;

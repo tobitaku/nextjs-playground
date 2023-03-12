@@ -8,11 +8,19 @@ const Footer = () => (
   <div className="flex h-auto w-full max-w-full flex-wrap items-center p-8 shadow-2xl">
     <div className="my-10 flex flex-col flex-wrap space-y-4">
       <h3 className="text-lg font-medium">tobiasziegler.dev</h3>
-      <Link className="text-md font-light" href="/impressum">
+      <Link
+        className="text-md font-light"
+        href="/impressum"
+        aria-label="Link zum Impressum"
+      >
         Impressum
       </Link>
-      <Link className="text-md font-light" href="/datenschutz">
-        Datenschutzerklärung
+      <Link
+        className="text-md font-light"
+        href="/datenschutz"
+        aria-label="Link zur Datenschutzerklärung"
+      >
+        Datenschutz
       </Link>
     </div>
     <SocialButton href="https://github.com/tobitaku">
