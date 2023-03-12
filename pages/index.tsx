@@ -2,7 +2,7 @@ import Card from '@/components/Card';
 import ContactButton from '@/components/ContactButton';
 import GradientText from '@/components/GradientText';
 import Image from 'next/image';
-import { motion, useReducedMotion } from 'framer-motion';
+import { m, useReducedMotion } from 'framer-motion';
 import {
   slideInItemVariants,
   slideInVariants,
@@ -30,7 +30,7 @@ const Home = () => {
         }}
         og
       />
-      <motion.section
+      <m.section
         variants={
           prefersReducedMotion ? slideInVariantsReducedMotion : slideInVariants
         }
@@ -48,7 +48,7 @@ const Home = () => {
           />
         </div>
         <div className="mx-8 md:flex md:flex-col md:justify-center">
-          <motion.h1
+          <m.h1
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -57,8 +57,8 @@ const Home = () => {
             className="my-4 text-5xl font-extrabold tracking-tighter"
           >
             Hi, ich bin <GradientText gradient="indigo">Tobias.</GradientText>
-          </motion.h1>
-          <motion.h1
+          </m.h1>
+          <m.h1
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -67,13 +67,13 @@ const Home = () => {
             className="mb-8 text-3xl font-bold text-slate-800"
           >
             Webentwickler & Enthusiast aus Nürnberg.
-          </motion.h1>
+          </m.h1>
           <ContactButton />
         </div>
-      </motion.section>
-      <section className="mb-8 flex w-full flex-col items-center justify-center">
+      </m.section>
+      <m.section className="mb-8 flex w-full flex-col items-center justify-center">
         <Card dark>
-          <motion.h2
+          <m.h2
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -82,8 +82,8 @@ const Home = () => {
             className="text-4xl font-bold tracking-tighter"
           >
             <GradientText gradient="amber">Portfolio</GradientText>
-          </motion.h2>
-          <motion.p
+          </m.h2>
+          <m.p
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -92,8 +92,8 @@ const Home = () => {
             className="text-md mb-4 font-light"
           >
             Mär. 2023
-          </motion.p>
-          <motion.p
+          </m.p>
+          <m.p
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -102,8 +102,8 @@ const Home = () => {
             className="mb-4 text-lg font-semibold"
           >
             Erstellung meiner persönlichen Website mit den Technologien:
-          </motion.p>
-          <motion.ul
+          </m.p>
+          <m.ul
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -114,10 +114,10 @@ const Home = () => {
             <li>Next.js ⚛</li>
             <li>Tailwind 🌬️</li>
             <li>Apollo 🧑‍🚀</li>
-          </motion.ul>
+          </m.ul>
         </Card>
         <Card dark>
-          <motion.h2
+          <m.h2
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -126,8 +126,8 @@ const Home = () => {
             className="text-4xl font-bold tracking-tighter"
           >
             <GradientText gradient="amber">Full Stack Entwicklung</GradientText>
-          </motion.h2>
-          <motion.p
+          </m.h2>
+          <m.p
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -136,8 +136,8 @@ const Home = () => {
             className="text-md mb-4 font-light"
           >
             2017 - heute
-          </motion.p>
-          <motion.p
+          </m.p>
+          <m.p
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -146,8 +146,8 @@ const Home = () => {
             className="mb-4 text-lg font-semibold"
           >
             In meinem Beruf sammle ich täglich Erfahrung mit den Technologien:
-          </motion.p>
-          <motion.ul
+          </m.p>
+          <m.ul
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -158,12 +158,12 @@ const Home = () => {
             <li>React ⚛</li>
             <li>Java und CMS ☕️</li>
             <li>CI/CD 👷‍♂️</li>
-          </motion.ul>
+          </m.ul>
         </Card>
-      </section>
-      <section className="mb-8 flex w-full justify-center">
+      </m.section>
+      <m.section className="mb-8 flex w-full justify-center">
         <Card>
-          <motion.h2
+          <m.h2
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -172,8 +172,8 @@ const Home = () => {
             className="mb-4 text-4xl font-bold tracking-tighter"
           >
             <GradientText gradient="indigo">Kontaktiere mich</GradientText>
-          </motion.h2>
-          <motion.p
+          </m.h2>
+          <m.p
             variants={
               prefersReducedMotion
                 ? slideInVariantsReducedMotion
@@ -183,10 +183,10 @@ const Home = () => {
           >
             Ich freue mich, von dir zu hören! Schicke mir eine Nachricht und ich
             werde mich so schnell wie möglich bei dir melden.
-          </motion.p>
+          </m.p>
           <ContactButton />
         </Card>
-      </section>
+      </m.section>
     </>
   );
 };
