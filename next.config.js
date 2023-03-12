@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  i18n: {
+    locales: ['de'],
+    defaultLocale: 'de',
+  },
   async headers() {
     return [
       {
@@ -11,9 +15,11 @@ const nextConfig = {
             value: `
             default-src 'self';
             object-src 'self';
-            script-src 'self' 'unsafe-eval' 'https://netlify-cdp-loader.netlify.app/netlify.js';
+            script-src 'self' 'unsafe-eval' https://netlify-cdp-loader.netlify.app/;
+            frame-src https://app.netlify.com/;
             style-src 'self' 'unsafe-inline';
-            font-src 'self';  
+            font-src 'self';
+            base-uri 'none';
           `
               .replace(/\s{2,}/g, ' ')
               .trim(),
@@ -36,4 +42,8 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
+module.exports = withBundleAnalyzer(nextConfig);

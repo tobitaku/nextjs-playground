@@ -1,7 +1,8 @@
-[context.production.branch-deploy]
+[[plugins]]
+    package = "@netlify/plugin-sitemap"
+[[plugins]]
+    package = "@netlify/plugin-lighthouse"
+[context.deploy-preview]
     command = "mv robots-preview.txt public/robots.txt && yarn build"
-
 [context.production]
     command = "mv robots-production.txt public/robots.txt && yarn build"
-[[context.production.plugins]]
-package = "@netlify/plugin-sitemap"
