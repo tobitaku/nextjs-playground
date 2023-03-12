@@ -1,3 +1,4 @@
+import { LazyMotion, domAnimation } from 'framer-motion';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import '@/styles/globals.css';
@@ -8,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <LazyMotion strict features={domAnimation}>
       <header
         className={`${inter.variable} flex items-center font-sans antialiased`}
       >
@@ -24,6 +25,6 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <Footer />
       </footer>
-    </>
+    </LazyMotion>
   );
 }
