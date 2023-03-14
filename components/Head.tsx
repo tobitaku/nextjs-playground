@@ -30,7 +30,7 @@ const Head = ({
         <meta property="og:title" content={title} />
         <meta
           property="og:image"
-          content="https://tobiasziegler.dev/profile.png"
+          content="https://tobiasziegler.dev/logo-main.webp"
         />
         {description && (
           <meta property="og:description" content={description} />
