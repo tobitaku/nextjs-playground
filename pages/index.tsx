@@ -37,9 +37,9 @@ const Home = () => {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true }}
-        className="mb-8 flex w-full flex-col items-center justify-center md:flex-row"
+        className="mb-16 flex w-full max-w-4xl flex-col items-center justify-center space-x-8 md:flex-row"
       >
-        <div className="m-8 max-w-sm">
+        <div className="mx-8 max-w-sm md:mx-0">
           <Image
             src={profilePic}
             alt="Profile picture"
@@ -47,7 +47,7 @@ const Home = () => {
             priority
           />
         </div>
-        <div className="mx-8 md:flex md:flex-col md:justify-center">
+        <div className="mx-8 md:mx-0 md:flex md:flex-col md:justify-center">
           <m.h1
             variants={
               prefersReducedMotion
