@@ -1,6 +1,4 @@
 import { LazyMotion, domAnimation } from 'framer-motion';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { Inter } from 'next/font/google';
